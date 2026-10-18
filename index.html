@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composition d'équipe – Volleyball</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <aside><textarea name="bloc-note" id="bloc-note" placeholder="Tu peux écrire ici, c'est un post-it"></textarea></aside>
+    <div class="container">
+        <h1>🏐 Composition d'équipe</h1>
+
+        <div class="form-section">
+            <h2>Postes</h2>
+            <div class="positions-grid" id="formGrid"></div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-rotate" onclick="rotate()">↻ Rotation</button>
+            <button class="btn btn-reset" onclick="resetAll()">✕ Effacer</button>
+            <button class="btn btn-print" onclick="window.print()">🖨 Imprimer</button>
+        </div>
+
+        <div class="court-section">
+            <div class="court">
+                <div class="court-label">Filet</div>
+                <div class="net"></div>
+                <div class="court-half" id="court"></div>
+                <div class="baseline"></div>
+                <div class="court-label">Ligne de fond</div>
+            </div>
+        </div>
+        <section>
+            <h2>Les rotations en réception</h2>
+            <p>Sur les schémas, la tête rouge du libéro remplace le central arrière.</p>
+            <div class="print-container">
+                <p><strong>Position P1 :</strong> Le passeur est en position arrière droite. Il doit se préparer à
+                    courir
+                    vers le
+                    filet pour une passe dès que le ballon est servi. Les autres joueurs se positionnent pour la
+                    réception,
+                    prêts
+                    à couvrir les zones de service adverses. Le Réceptionneur attaquant (R4) qui est en position avant
+                    droite
+                    redescend pour
+                    couvrir le passeur tout en gardant le passeur légèrement derrière lui.</p>
+                <img src="images/P1-reception.png" alt="Schéma de réception en P1">
+            </div>
+
+            <div class="printconteiner">
+                <p><strong>Position P6 :</strong> Le passeur est en arrière centre. Afin de
+                    lui permettre de gagner du temps il monte jusqu’a au pointu en restant toujours entre le libéro et
+                    le R4
+                    arrière. Pour aider la réception le R4 avant, sur cette rotation,
+                    redescend pour la réception et se libère
+                    pour aller attaquer le plus rapidement possible.</p>
+                <img src="images/P6-reception.png" alt="Schéma de réception en P6">
+            </div>
+
+            <div class="printconteiner">
+                <p><strong>Position P5 :</strong> Le passeur est au fond à gauche, se préparant se positionner pour la
+                    passe, il
+                    peut avancer en veillant à rester derrière le central en position avant gauche et à gauche du R4
+                    arrière.
+                    Les joueurs de réception couvrent les zones de service. L'attaquant en position centrale avant
+                    recule
+                    pour la réception, en veillant à rester à droite du central en position avant gauche et devant
+                    le R4 arrière.</p>
+                <img src="images/P5-reception.png" alt="Schéma de réception en P5">
+            </div>
+            <div class="printconteiner">
+                <p><strong>Position P4 :</strong> Le Grand Escalier. Le passeur est en position avant gauche. Le R4
+                    avant
+                    vient se placer en réception à gauche. Attention à sa limite central avant/R4 arrière.</p>
+                <img src="images/P4-reception.png" alt="Schéma de réception en P4">
+            </div>
+            <div class="printconteiner">
+                <p><strong>Position P3 :</strong> Le passeur est maintenant devant au milieu. Les joueurs s’ajustent
+                    pour
+                    permettre au passeur d'être en position et au pointu d'être protégé de la réception. C'est surtout
+                    l'attaquant en position avant gauche qui recule en réception.</p>
+                <img src="images/P3-reception.png" alt="Schéma de réception en P3">
+            </div>
+            <div class="printconteiner">
+                <p><strong>Position P2 :</strong> Le passeur est en place . L'attaquant en position avant centre recule
+                    pour
+                    prendre la réception, attention à être à droite du central et en avant de sont attaquant arrière.
+                </p>
+                <img src="images/P2-reception.png" alt="Schéma de réception en P2">
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
